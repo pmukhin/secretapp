@@ -30,9 +30,9 @@ object ClientQueries {
   ): dc.Quoted[dc.Query[Client]] =
     quote {
       query[Client]
-        .filter(c => if (includeDeleted) true else !c.isDeleted)
-        .drop(offset)
-        .take(limit)
+        .filter(lift(includeDeleted) || !_.isDeleted)
+        .drop(lift(offset))
+        .take(lift(limit))
     }
 
   def findById(id: Long): dc.Quoted[dc.Query[Client]] =

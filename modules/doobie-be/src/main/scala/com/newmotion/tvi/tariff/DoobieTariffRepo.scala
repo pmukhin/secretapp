@@ -83,8 +83,6 @@ class DoobieTariffRepo[F[_]: Sync](xa: Transactor[F]) extends TariffRepository[F
   override def findAll(c: Repository.Criteria): F[List[Tariff]] =
     run(TariffQuery.findAll(c.limit, c.offset, c.includeDeleted)).transact(xa)
 
-  override def update(tariff: Tariff): F[Unit] = ???
-
   import cats.syntax.functor._
 
   override def drop(id: Long): F[Unit] =

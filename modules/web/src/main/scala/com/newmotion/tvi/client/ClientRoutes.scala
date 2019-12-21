@@ -1,19 +1,14 @@
 package com.newmotion.tvi.client
 
-import java.time.{Instant, ZonedDateTime}
-
 import cats.data.Kleisli
 import cats.effect.Sync
 import com.newmotion.logging.FLogger
-import com.newmotion.tvi.{Repository, formats}
-import com.newmotion.tvi.client.Client.AlreadyDeleted
 import com.newmotion.response.BadRequestBody
-import com.newmotion.tvi.client.invoice.Invoice
+import com.newmotion.tvi.Repository
+import com.newmotion.tvi.client.Client.AlreadyDeleted
 import org.http4s.circe.{jsonEncoderOf, jsonOf}
 import org.http4s.dsl.Http4sDsl
 import org.http4s.{EntityDecoder, EntityEncoder, HttpRoutes}
-
-import scala.util.Try
 
 object ClientRoutes {
   import ClientRequest._

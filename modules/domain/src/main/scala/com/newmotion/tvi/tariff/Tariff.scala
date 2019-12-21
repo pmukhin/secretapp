@@ -47,17 +47,6 @@ object Tariff {
     }
 
   // noinspection TypeAnnotation
-  def updateK[F[_]: Sync](tariffs: TariffRepository[F]) =
-    Kleisli[F, (UpdateCommand, Tariff), Unit] {
-      case (cmd, tariff) =>
-        val upd = cmd
-          .into[Tariff]
-          .withFieldConst(_.isDeleted, tariff.isDeleted)
-          .transform
-        tariffs.update(upd)
-    }
-
-  // noinspection TypeAnnotation
   def createK[F[_]: Sync](tariffs: TariffRepository[F]) =
     validateK(tariffs).andThen(writeK(tariffs))
 

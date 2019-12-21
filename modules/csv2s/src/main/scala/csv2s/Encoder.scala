@@ -12,7 +12,8 @@ case class CsvLoad(
 ) {
 
   private def encodeValue(s: String): String =
-    if (s.forall(isValidChar) && !s.contains(delim)) s else "\"" + s + "\""
+    if (s.forall(isValidChar) && !s.contains(delim) && !s.contains(lineDelim)) s
+    else "\"" + s + "\""
 
   private def isValidChar(c: Char): Boolean =
     c != '"'

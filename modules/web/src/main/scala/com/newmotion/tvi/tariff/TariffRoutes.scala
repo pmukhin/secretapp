@@ -40,7 +40,6 @@ object TariffRoutes {
     new TariffRoutes(
       tariffs,
       Tariff.createK[F](tariffs),
-      Tariff.updateK[F](tariffs),
       Tariff.deleteK[F](tariffs),
       FLogger.fromClassUnsafe[F, TariffRoutes[F]] // let it fail immediately if something's wrong
     )
@@ -49,7 +48,6 @@ object TariffRoutes {
 class TariffRoutes[F[_]](
   tariffs: TariffRepository[F],
   createK: Kleisli[F, Tariff.CreateCommand, Tariff],
-  updateK: Kleisli[F, (Tariff.UpdateCommand, Tariff), Unit],
   deleteK: Kleisli[F, Long, Unit],
   logger: FLogger[F]
 )(implicit F: Sync[F])
@@ -89,15 +87,6 @@ class TariffRoutes[F[_]](
         case e: InvalidMessageBodyFailure =>
           logger.info(e)("body parsing failure") *> F.raiseError(e)
       }
-
-    case req @ PUT -> Root / LongVar(id) =>
-      val update = (tariff: Tariff) =>
-        req
-          .as[TariffRequest]
-          .map(_.transformInto[Tariff.UpdateCommand](TariffRequest.trans(id))) >>=
-          (cmd => Function.untupled(updateK.run)(cmd, tariff))
-
-      tariffs.findById(id).orNotFoundAndThen_(update)
 
     case DELETE -> Root / LongVar(id) =>
       tariffs

@@ -1,35 +1,40 @@
 package com.newmotion.tvi.client
 
+import java.time.format.DateTimeFormatter
 import java.time.{LocalDate, LocalDateTime}
 
 import cats.data.Kleisli
 import cats.effect.Sync
-import io.circe.{Encoder, Json}
+import io.circe.{Decoder, Encoder, Json}
 
 case class Client(
   id: Long,
   firstName: String,
   lastName: String,
-  bod: LocalDate,
+  dob: LocalDate,
   isDeleted: Boolean
 )
 
 object Client {
-  import io.circe.generic.semiauto._
   import cats.syntax.applicative._
   import cats.syntax.apply._
   import io.scalaland.chimney.dsl._
 
+  private val dobEncoder =
+    DateTimeFormatter.ofPattern("yyyy-MM-dd")
+
   implicit val dateEncoder: Encoder[LocalDate] =
-    (a: LocalDate) => Json.fromString(a.formatted("YYYY-mm-dd"))
+    (a: LocalDate) => Json.fromString(dobEncoder.format(a))
 
   implicit val encoder: Encoder[Client] =
-    deriveEncoder
+    Encoder.forProduct4("id", "firstName", "lastName", "dob") { c =>
+      (c.id, c.firstName, c.lastName, c.dob)
+    }
 
   case class CreateCommand(
     firstName: String,
     lastName: String,
-    bod: LocalDate
+    dob: LocalDate
   )
 
   case object DriverTooYoung extends RuntimeException
@@ -46,9 +51,10 @@ object Client {
   // noinspection TypeAnnotation
   def validateK[F[_]](implicit F: Sync[F]) =
     Kleisli[F, CreateCommand, CreateCommand] { cmd =>
-      val bod           = cmd.bod.atStartOfDay
-      val youngerThan18 = LocalDateTime.now().minusYears(18L).isBefore(bod)
-
+      val youngerThan18 = LocalDateTime
+        .now()
+        .minusYears(18L)
+        .isBefore(cmd.dob.atStartOfDay)
       F.raiseError(DriverTooYoung).whenA(youngerThan18) *> F.pure(cmd)
     }
 

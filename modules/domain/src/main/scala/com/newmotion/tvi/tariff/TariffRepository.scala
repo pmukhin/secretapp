@@ -9,7 +9,6 @@ trait TariffRepository[F[_]] {
   def findByStart(start: Instant): F[Option[Tariff]]
   def findWithin(start: Instant, end: Instant): F[List[Tariff]]
   def findAll(c: Criteria): F[List[Tariff]]
-  def update(tariff: Tariff): F[Unit]
   def drop(id: Long): F[Unit]
   def :+(tariff: Tariff): F[Tariff]
 }

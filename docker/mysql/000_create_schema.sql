@@ -2,10 +2,11 @@ CREATE TABLE `Client` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `firstName` varchar(50) NOT NULL DEFAULT '',
   `lastName` varchar(50) NOT NULL DEFAULT '',
-  `bod` date NOT NULL,
+  `dob` date NOT NULL,
   `isDeleted` char(1) NOT NULL DEFAULT '',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`),
+  KEY `isDeleted_idx` (`isDeleted`) -- for list view --
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `Tariff` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -13,16 +14,17 @@ CREATE TABLE `Tariff` (
   `hourlyParkingRate` double DEFAULT NULL,
   `start` datetime NOT NULL,
   `isDeleted` char(1) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`),
+  KEY `isDeleted_start_idx` (`isDeleted`, `start`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `Session` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `start` datetime NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE current_timestamp(),
+  `start` datetime NOT NULL,
   `end` datetime NOT NULL,
   `clientId` int(11) NOT NULL,
   `chargePointId` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `start_chargePointId_unique_idx` (`start`,`chargePointId`),
-  KEY `clientId` (`end`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8
+  KEY `clientId_idx` (`clientId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8

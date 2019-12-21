@@ -26,7 +26,7 @@ class ClientValidateSpec extends Specification with CatsIO with Mockito {
     "do nothing if client is at least 18yo" in {
       Client
         .validateK[IO]
-        .run(sampleCommand.copy(bod = bodJust18))
+        .run(sampleCommand.copy(dob = bodJust18))
         .attempt
         .map(_.isRight must beTrue)
     }
