@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: ru.vyarus:generics-resolver:3.0.1:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/ru.vyarus/generics-resolver/jars/generics-resolver-3.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/ru.vyarus/generics-resolver/srcs/generics-resolver-3.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

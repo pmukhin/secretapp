@@ -1,0 +1,38 @@
+version: '2'
+
+services:
+  mysql-db:
+    image: mariadb:10
+    container_name: mysql-db
+    hostname: mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: TVIApp
+    volumes:
+      - ./docker/mysql:/docker-entrypoint-initdb.d
+      - ./docker/data:/data
+    ports:
+      - "3306:3306"
+    networks:
+      - tviapp
+
+  web:
+    build:
+      context: .
+      dockerfile: "./docker/web/Dockerfile"
+    environment:
+      - "TVI_MYSQL_HOST=mysql-db"
+      - "TVI_MYSQL_PORT=3306"
+      - "TVI_MYSQL_NAME=TVIApp"
+      - "TVI_MYSQL_USER=root"
+      - "TVI_MYSQL_PSW=root"
+    ports:
+      - "8080:8080"
+    networks:
+      - tviapp
+
+networks:
+  tviapp:
+    driver: bridge
+

@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0016f1e-2968-451d-8812-d3d637f20835" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/project/target/" />
+    <ignored path="$PROJECT_DIR$/modules/domain/target/" />
+    <ignored path="$PROJECT_DIR$/modules/web/target/" />
+    <ignored path="$PROJECT_DIR$/modules/memory/target/" />
+    <ignored path="$PROJECT_DIR$/modules/doobie/target/" />
+    <ignored path="$PROJECT_DIR$/modules/csv2s/target/" />
+    <ignored path="$PROJECT_DIR$/modules/doobie-be/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Class" />
+        <option value="Scala Object" />
+        <option value="Package Object" />
+        <option value="Specs2 Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Bad</find>
+      <find>t</find>
+      <find>ZoneOff</find>
+      <find>Date</find>
+      <find>Delte</find>
+      <find>insert</find>
+      <find>Can't find Encoder</find>
+      <find>val me</find>
+      <find>toInstant(</find>
+      <find>toInstant</find>
+      <find>from</find>
+      <find>TariffRE</find>
+      <find>newFix</find>
+      <find>newF</find>
+      <find>String</find>
+      <find>contra</find>
+      <find>contramap</find>
+      <find>def contramap</find>
+      <find>BinaryOc</find>
+      <find>octet</find>
+      <find>binar</find>
+      <find>binary</find>
+      <find>octet-</find>
+      <find>MediaRange</find>
+      <find>`octet</find>
+      <find>csv</find>
+      <find>04:33:00</find>
+      <find>2018-11-27 04:33:00</find>
+      <find>2018-11-27 04:33:00,2018-11-27 04:20:00</find>
+      <find>get</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/modules/domain/src/main/scala/com/newmotion/tvi/session/Session.scala" />
+        <option value="$PROJECT_DIR$/modules/domain/src/test/scala/com/newmotion/tvi/tariff/TariffValidateSpec.scala" />
+        <option value="$PROJECT_DIR$/modules/doobie/src/main/scala/com/newmotion/encoders.scala" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/scala/com/newmotion/tvi/tariff/Tariff.scala" />
+        <option value="$PROJECT_DIR$/modules/doobie/src/main/scala/com/newmotion/doobie/SqlCtx.scala" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/scala/com/newmotion/tvi/Repository.scala" />
+        <option value="$PROJECT_DIR$/modules/doobie/src/main/scala/com/newmotion/tvi/client/DoobieClientRepo.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/tariff/TariffRequest.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/session/SessionRequest.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/session/SessionRoutes.scala" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/scala/com/newmotion/tvi/session/invoice/Invoice.scala" />
+        <option value="$PROJECT_DIR$/modules/doobie/src/main/scala/com/newmotion/tvi/session/DoobieSessionRepo.scala" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/scala/com/newmotion/tvi/session/SessionRepository.scala" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/scala/com/newmotion/tvi/tariff/TariffRepository.scala" />
+        <option value="$PROJECT_DIR$/docker/mysql/schema.sql" />
+        <option value="$PROJECT_DIR$/docker/mysql/data/scriptFile.scala" />
+        <option value="$PROJECT_DIR$/docker/mysql/data/Client.csv" />
+        <option value="$PROJECT_DIR$/docker/mysql/001_seed_data.sql" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/configuration/ConfigSection.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/database/Transactor.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/configuration/DatabaseConf.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/database/DoobieTransactor.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/tariff/TariffRoutes.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/implicits.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/configuration/WebConf.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/TViApp.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/web/BlazeServer.scala" />
+        <option value="$PROJECT_DIR$/modules/domain/src/test/scala/com/newmotion/tvi/client/invoice/InvoiceSpec.scala" />
+        <option value="$PROJECT_DIR$/modules/domain/src/test/scala/com/newmotion/tvi/client/invoice/InvoiceBuildKSpec.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/query/ParamDecoder.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/client/ClientRoutes.scala" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/scala/com/newmotion/tvi/client/invoice/Invoice.scala" />
+        <option value="$PROJECT_DIR$/modules/doobie/src/main/scala/com/newmotion/tvi/tariff/DoobieTariffRepo.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/validation/instant.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/TVIApp.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/helpers.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/decoders.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/client/invoice/encoders.scala" />
+        <option value="$PROJECT_DIR$/modules/csv2s/src/main/scala/csv2s/Encoder.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/client/invoice/InvoiceRoutes.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/client/invoice/responseEncoders.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/resources/application.conf" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/database/DoobieTransactor.scala" />
+        <option value="$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/configuration/DatabaseConf.scala" />
+        <option value="$PROJECT_DIR$/.env.example" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/project/plugins.sbt" />
+        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/docker/web/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="57" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="821" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newmotion-tvi-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Specs2" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Specs2" value="org.specs2.mutable.Specification" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.newmotion.tvi.client.invoice" />
+      <recent name="com.newmotion" />
+      <recent name="com.newmotion.tvi.client" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="org.specs2.mutable.Specification" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker/data" />
+      <recent name="$PROJECT_DIR$/docker" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.newmotion" />
+      <recent name="com.newmotion.tvi" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.newmotion.tvi" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/modules/web/src/main" />
+      <recent name="$PROJECT_DIR$/modules/web" />
+      <recent name="$PROJECT_DIR$/modules/memory" />
+      <recent name="$PROJECT_DIR$/modules/doobie" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Remote.Unnamed">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.newmotion.Main" />
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.newmotion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="InvoiceBuildKSpec" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true">
+      <module name="domain" />
+      <setting name="path" value="com.newmotion.tvi.client.invoice.InvoiceBuildKSpec" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <setting name="jrePath" value="" />
+      <envs />
+      <setting name="testKind" value="Class" />
+      <setting name="path" value="com.newmotion.tvi.client.invoice.InvoiceBuildKSpec" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.newmotion.encodersSpec::encode ZonedDateTime including ZonedId" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true" nameIsGenerated="true">
+      <module name="doobie" />
+      <setting name="path" value="com.newmotion.encodersSpec" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <setting name="jrePath" value="" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="com.newmotion.encodersSpec" />
+      <setting name="testName" value="encode ZonedDateTime including ZonedId" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.newmotion.tvi.client.invoice.InvoiceBuildKSpec::build an Invoice when data is provided" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true" nameIsGenerated="true">
+      <module name="domain" />
+      <setting name="path" value="com.newmotion.tvi.client.invoice.InvoiceBuildKSpec" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <setting name="jrePath" value="" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="com.newmotion.tvi.client.invoice.InvoiceBuildKSpec" />
+      <setting name="testName" value="build an Invoice when data is provided" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="encodersSpec" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true">
+      <module name="doobie" />
+      <setting name="path" value="com.newmotion.encodersSpec" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <setting name="jrePath" value="" />
+      <envs />
+      <setting name="testKind" value="Class" />
+      <setting name="path" value="com.newmotion.encodersSpec" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Remote.Unnamed" />
+      <item itemvalue="Specs2.com.newmotion.encodersSpec::encode ZonedDateTime including ZonedId" />
+      <item itemvalue="Specs2.com.newmotion.tvi.client.invoice.InvoiceBuildKSpec::build an Invoice when data is provided" />
+      <item itemvalue="Specs2.encodersSpec" />
+      <item itemvalue="Specs2.InvoiceBuildKSpec" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Specs2.com.newmotion.tvi.client.invoice.InvoiceBuildKSpec::build an Invoice when data is provided" />
+        <item itemvalue="Specs2.InvoiceBuildKSpec" />
+        <item itemvalue="Specs2.com.newmotion.encodersSpec::encode ZonedDateTime including ZonedId" />
+        <item itemvalue="Specs2.encodersSpec" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="root" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="web [file:/Users/pavel.mukhin/IdeaProjects/newmotion-tvi-app/]" />
+                <option name="path" value="$PROJECT_DIR$/modules/web" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="domain [file:/Users/pavel.mukhin/IdeaProjects/newmotion-tvi-app/]" />
+                <option name="path" value="$PROJECT_DIR$/modules/domain" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="doobieBackend [file:/Users/pavel.mukhin/IdeaProjects/newmotion-tvi-app/]" />
+                <option name="path" value="$PROJECT_DIR$/modules/doobie-be" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="root [file:/Users/pavel.mukhin/IdeaProjects/newmotion-tvi-app/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="csv2s [file:/Users/pavel.mukhin/IdeaProjects/newmotion-tvi-app/]" />
+                <option name="path" value="$PROJECT_DIR$/modules/csv2s" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="root-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/build.sbt" value="4173462944" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
+        <entry key="$PROJECT_DIR$/project/plugins.sbt" value="249927883" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../amls" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../amls-copy" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../doobie" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../flipflop" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../http4s" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../jam" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../quickstart" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../rs-research" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../tofu" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../tookitaki-common" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../transistor" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../webapp" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0016f1e-2968-451d-8812-d3d637f20835" name="Default Changelist" comment="" />
+      <created>1576487853915</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576487853915</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="com_newmotion_tvi_client_invoice_InvoiceBuildKSpec__build_an_Invoice_when_data_is_provided - 2019.12.20 at 18h 21m 28s.xml">
+      <configuration name="com.newmotion.tvi.client.invoice.InvoiceBuildKSpec::build an Invoice when data is provided" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+    <history-entry file="com_newmotion_tvi_client_invoice_InvoiceBuildKSpec__build_an_Invoice_when_data_is_provided - 2019.12.20 at 18h 23m 26s.xml">
+      <configuration name="com.newmotion.tvi.client.invoice.InvoiceBuildKSpec::build an Invoice when data is provided" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+    <history-entry file="com_newmotion_tvi_client_invoice_InvoiceBuildKSpec__build_an_Invoice_when_data_is_provided - 2019.12.20 at 18h 24m 06s.xml">
+      <configuration name="com.newmotion.tvi.client.invoice.InvoiceBuildKSpec::build an Invoice when data is provided" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+    <history-entry file="com_newmotion_tvi_client_invoice_InvoiceBuildKSpec__build_an_Invoice_when_data_is_provided - 2019.12.20 at 18h 24m 50s.xml">
+      <configuration name="com.newmotion.tvi.client.invoice.InvoiceBuildKSpec::build an Invoice when data is provided" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+    <history-entry file="com_newmotion_tvi_client_invoice_InvoiceBuildKSpec__build_an_Invoice_when_data_is_provided - 2019.12.20 at 18h 26m 03s.xml">
+      <configuration name="com.newmotion.tvi.client.invoice.InvoiceBuildKSpec::build an Invoice when data is provided" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+    <history-entry file="InvoiceBuildKSpec - 2019.12.20 at 18h 27m 18s.xml">
+      <configuration name="InvoiceBuildKSpec" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+    <history-entry file="InvoiceBuildKSpec - 2019.12.20 at 18h 31m 09s.xml">
+      <configuration name="InvoiceBuildKSpec" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+    <history-entry file="InvoiceBuildKSpec - 2019.12.20 at 18h 33m 07s.xml">
+      <configuration name="InvoiceBuildKSpec" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+    <history-entry file="com_newmotion_tvi_client_invoice_InvoiceBuildKSpec__build_an_Invoice_when_data_is_provided - 2019.12.20 at 18h 38m 17s.xml">
+      <configuration name="com.newmotion.tvi.client.invoice.InvoiceBuildKSpec::build an Invoice when data is provided" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+    <history-entry file="com_newmotion_tvi_client_invoice_InvoiceBuildKSpec__build_an_Invoice_when_data_is_provided - 2019.12.21 at 14h 27m 36s.xml">
+      <configuration name="com.newmotion.tvi.client.invoice.InvoiceBuildKSpec::build an Invoice when data is provided" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="825" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="DB Browser" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3287858" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3983629" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3287858" />
+      <window_info anchor="bottom" id="Docker" order="10" weight="0.32921812" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Build" order="12" sideWeight="0.49928468" weight="0.3287858" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3287858" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="sbt" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Gradle" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/database/DoobieTransactor.scala</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>conf.url</expression-string>
+        <language-id>Scala</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/decoders.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding>
+            <element signature="e#27#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/helpers.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/co.fs2/fs2-core_2.12/srcs/fs2-core_2.12-2.1.0-sources.jar!/fs2/Stream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="2985" lean-forward="true" selection-start-line="2985" selection-end-line="2985" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/co.fs2/fs2-core_2.12/srcs/fs2-core_2.12-2.1.0-sources.jar!/fs2/Chunk.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="1114" lean-forward="true" selection-start-line="1114" selection-end-line="1114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-core_2.12/srcs/circe-core_2.12-0.11.1-sources.jar!/io/circe/Printer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="221" lean-forward="true" selection-start-line="221" selection-end-line="221" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-circe_2.12/srcs/http4s-circe_2.12-0.20.8-sources.jar!/org/http4s/circe/CirceInstances.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="99" column="38" lean-forward="true" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar!/scala/collection/SeqLike.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="561" column="24" selection-start-line="561" selection-start-column="24" selection-end-line="561" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-core_2.12/srcs/http4s-core_2.12-0.20.8-sources.jar!/org/http4s/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-core_2.12/srcs/http4s-core_2.12-0.20.8-sources.jar!/org/http4s/Entity.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar!/scala/Byte.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-core_2.12/srcs/http4s-core_2.12-0.20.8-sources.jar!/org/http4s/Status.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2557">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-dsl_2.12/srcs/http4s-dsl_2.12-0.20.8-sources.jar!/org/http4s/dsl/impl/Statuses.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/client/ClientRoutes.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="821">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="e#34#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/TVIApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#27#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-core_2.12/srcs/http4s-core_2.12-0.20.8-sources.jar!/org/http4s/headers/Content-Type.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-core_2.12/srcs/http4s-core_2.12-0.20.8-sources.jar!/org/http4s/Message.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="522" lean-forward="true" selection-start-line="522" selection-end-line="522" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-core_2.12/srcs/http4s-core_2.12-0.20.8-sources.jar!/org/http4s/parser/SimpleHeaders.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-core_2.12/srcs/http4s-core_2.12-0.20.8-sources.jar!/org/http4s/Header.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="99" column="41" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-core_2.12/srcs/http4s-core_2.12-0.20.8-sources.jar!/org/http4s/headers/Content-Disposition.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-core_2.12/srcs/http4s-core_2.12-0.20.8-sources.jar!/org/http4s/MediaType.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-core_2.12/srcs/http4s-core_2.12-0.20.8-sources.jar!/org/http4s/MimeDB.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="6505" column="3" lean-forward="true" selection-start-line="6505" selection-start-column="3" selection-end-line="6505" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar!/scala/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/scala/com/newmotion/tvi/client/invoice/Invoice.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#42#66#0" expanded="true" />
+            <element signature="e#877#905#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.http4s/http4s-core_2.12/srcs/http4s-core_2.12-0.20.8-sources.jar!/org/http4s/EntityEncoder.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar!/scala/runtime/RichChar.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/util/concurrent/TimeUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="270" column="5" lean-forward="true" selection-start-line="270" selection-start-column="5" selection-end-line="270" selection-end-column="5" />
+          <folding>
+            <element signature="e#11394#11395#0" expanded="true" />
+            <element signature="e#11441#11442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/scala/com/newmotion/tvi/formats.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/time/Instant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="1225" column="35" lean-forward="true" selection-start-line="1225" selection-start-column="35" selection-end-line="1225" selection-end-column="35" />
+          <folding>
+            <element signature="e#28611#28612#0" expanded="true" />
+            <element signature="e#28641#28642#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/time/format/DateTimePrintContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="301" column="13" lean-forward="true" selection-start-line="301" selection-start-column="13" selection-end-line="301" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/time/format/DateTimeFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="1721" column="5" lean-forward="true" selection-start-line="1721" selection-start-column="5" selection-end-line="1721" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/scala/com/newmotion/tvi/tariff/Tariff.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/data/Session.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="37260" column="53" selection-start-line="37260" selection-start-column="53" selection-end-line="37260" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/nio/Buffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="198" column="45" selection-start-line="198" selection-start-column="45" selection-end-line="198" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/nio/ByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="270" column="41" lean-forward="true" selection-start-line="270" selection-start-column="41" selection-end-line="270" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar!/scala/languageFeature.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/csv2s/src/main/scala/csv2s/Encoder.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/doobie-be/src/main/scala/com/newmotion/doobie/SqlCtx.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/client/invoice/responseEncoders.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="e#42#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/tvi/client/invoice/InvoiceRoutes.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+          <folding>
+            <element signature="e#42#83#0" expanded="true" />
+            <element signature="e#950#984#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/configuration/DatabaseConf.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/database/DoobieTransactor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/web/src/main/resources/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/web/src/main/scala/com/newmotion/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/web/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
