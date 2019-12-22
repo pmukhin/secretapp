@@ -42,7 +42,7 @@
         <plugin path="$USER_HOME$/.ivy2/cache/org.scalamacros/paradise_2.12.8/jars/paradise_2.12.8-2.1.0.jar" />
       </plugins>
     </profile>
-    <profile name="sbt 5" modules="csv2s,domain,doobie-be,doobieBackend,web">
+    <profile name="sbt 5" modules="csv2s,domain,doobie-be,doobieBackend,it,web">
       <option name="postfixOps" value="true" />
       <option name="higherKinds" value="true" />
       <option name="deprecationWarnings" value="true" />

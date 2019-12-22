@@ -1,8 +1,8 @@
 package com.newmotion.tvi
 
 import cats.effect.{ConcurrentEffect, ContextShift, Timer}
-import com.newmotion.configuration.{DatabaseConf, WebConf}
-import com.newmotion.database.DoobieTransactor
+import com.newmotion.configuration.{ConfigSection, WebConf}
+import com.newmotion.doobie.{DatabaseConf, DoobieTransactor}
 import com.newmotion.tvi.client.invoice.InvoiceRoutes
 import com.newmotion.tvi.client.{ClientRoutes, DoobieClientRepo}
 import com.newmotion.tvi.session.{CreateSessionConsumer, DoobieSessionRepo, Session, SessionRoutes}
@@ -27,8 +27,8 @@ object TVIApp {
     C: ContextShift[F]
   ): Stream[F, Nothing] = {
     for {
-      dbConf          <- ConfigSource.default.at(DatabaseConf.section).loadF[F, DatabaseConf].stream
-      webConf         <- ConfigSource.default.at(WebConf.section).loadF[F, WebConf].stream
+      dbConf          <- ConfigSource.default.at(ConfigSection.database).loadF[F, DatabaseConf].stream
+      webConf         <- ConfigSource.default.at(ConfigSection.web).loadF[F, WebConf].stream
       xa              = DoobieTransactor.fromConf(dbConf)
       tariffs         = DoobieTariffRepo.impl[F](xa)
       clients         = DoobieClientRepo.impl[F](xa)

@@ -16,6 +16,6 @@ object Repository {
     import cats.syntax.applicative._
 
     def assertDeleted: F[Unit] =
-      Sync[F].flatMap(x)(d => Sync[F].raiseError(AlreadyDeleted).whenA(d != 0))
+      Sync[F].flatMap(x)(d => Sync[F].raiseError(AlreadyDeleted).whenA(d != 1))
   }
 }

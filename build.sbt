@@ -72,6 +72,21 @@ lazy val doobieBackend = (project in file("modules/doobie-be"))
     )
   )
 
+lazy val it = (project in file("modules/it"))
+  .dependsOn(domain)
+  .settings(commonSettings)
+  .settings(
+    libraryDependencies ++= Seq(
+      "org.http4s"            %% "http4s-blaze-client" % Http4sVersion,
+      "com.github.pureconfig" %% "pureconfig"          % PureconfigVersion,
+      "org.tpolecat"          %% "doobie-core"         % DoobieVersion,
+      "org.tpolecat"          %% "doobie-quill"        % DoobieVersion,
+      "mysql"                 % "mysql-connector-java" % MysqlConnectorVersion,
+      "io.circe"              %% "circe-core"          % CirceVersion,
+      "io.circe"              %% "circe-parser"        % CirceVersion
+    )
+  )
+
 lazy val csv2s = (project in file("modules/csv2s"))
   .settings(commonSettings)
 

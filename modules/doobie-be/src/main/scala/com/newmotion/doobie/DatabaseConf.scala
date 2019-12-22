@@ -1,8 +1,4 @@
-package com.newmotion.configuration
-
-object DatabaseConf extends ConfigSection {
-  val section = "database"
-}
+package com.newmotion.doobie
 
 case class DatabaseConf(
   host: String,

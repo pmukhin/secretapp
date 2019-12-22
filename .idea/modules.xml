@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/csv2s.iml" filepath="$PROJECT_DIR$/.idea/modules/csv2s.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/doobie-be.iml" filepath="$PROJECT_DIR$/.idea/modules/doobie-be.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/it.iml" filepath="$PROJECT_DIR$/.idea/modules/it.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/root.iml" filepath="$PROJECT_DIR$/.idea/modules/root.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/root-build.iml" filepath="$PROJECT_DIR$/.idea/modules/root-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/web.iml" filepath="$PROJECT_DIR$/.idea/modules/web.iml" />

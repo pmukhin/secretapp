@@ -1,5 +1,6 @@
 package com.newmotion.configuration
 
-trait ConfigSection {
-  val section: String
+object ConfigSection {
+  val database = "database"
+  val web      = "web"
 }

@@ -8,7 +8,7 @@ import com.newmotion.tvi.Repository
 import com.newmotion.tvi.client.Client.AlreadyDeleted
 import org.http4s.circe.{jsonEncoderOf, jsonOf}
 import org.http4s.dsl.Http4sDsl
-import org.http4s.{EntityDecoder, EntityEncoder, HttpRoutes}
+import org.http4s.{EntityDecoder, EntityEncoder, HttpRoutes, InvalidMessageBodyFailure}
 
 object ClientRoutes {
   import ClientRequest._
@@ -82,6 +82,8 @@ class ClientRoutes[F[_]](
         .map(_.transformInto[Client.CreateCommand]) >>= createK.run
 
       create.andOk.recoverWith {
+        case e: InvalidMessageBodyFailure =>
+          logger.info(e)("invalid body") *> F.raiseError(e)
         case Client.DriverTooYoung =>
           BadRequest(BadRequestBody("driver is too young" :: Nil))
       }

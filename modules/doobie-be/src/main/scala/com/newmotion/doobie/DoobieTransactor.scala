@@ -1,9 +1,8 @@
-package com.newmotion.database
+package com.newmotion.doobie
 
 import java.util.concurrent.Executors
 
 import cats.effect.{Async, Blocker, ContextShift}
-import com.newmotion.configuration.DatabaseConf
 import doobie.util.transactor.Transactor
 
 import scala.concurrent.ExecutionContext

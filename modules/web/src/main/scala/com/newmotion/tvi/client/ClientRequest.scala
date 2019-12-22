@@ -16,11 +16,11 @@ object ClientRequest {
   implicit val encoder: Encoder[ClientRequest] = deriveEncoder
 
   implicit def transformer: Transformer[ClientRequest, CreateCommand] =
-    (src: ClientRequest) => CreateCommand(src.firstName.value, src.lastName.value, src.bod)
+    (src: ClientRequest) => CreateCommand(src.firstName.value, src.lastName.value, src.dob)
 }
 
 case class ClientRequest(
   firstName: Refined[String, NonEmpty],
   lastName: Refined[String, NonEmpty],
-  bod: LocalDate
+  dob: LocalDate
 )

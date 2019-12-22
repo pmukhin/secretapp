@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/modules/csv2s" />
             <option value="$PROJECT_DIR$/modules/domain" />
             <option value="$PROJECT_DIR$/modules/doobie-be" />
+            <option value="$PROJECT_DIR$/modules/it" />
             <option value="$PROJECT_DIR$/modules/web" />
             <option value="$PROJECT_DIR$/project" />
           </set>
