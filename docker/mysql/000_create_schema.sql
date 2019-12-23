@@ -27,4 +27,4 @@ CREATE TABLE `Session` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `start_chargePointId_unique_idx` (`start`,`chargePointId`),
   KEY `clientId_idx` (`clientId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

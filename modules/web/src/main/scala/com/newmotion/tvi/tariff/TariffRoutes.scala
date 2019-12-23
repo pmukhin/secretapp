@@ -4,9 +4,9 @@ import cats.data.Kleisli
 import cats.effect.Sync
 import com.newmotion.logging.FLogger
 import com.newmotion.tvi.Repository
-import com.newmotion.tvi.client.Client.AlreadyDeleted
 import com.newmotion.tvi.decoders.{OptDeletedParam, OptLimitParam, OptOffsetParam}
 import com.newmotion.response.BadRequestBody
+import com.newmotion.tvi.Repository.AlreadyDeleted
 import org.http4s._
 import org.http4s.circe._
 import org.http4s.dsl.Http4sDsl

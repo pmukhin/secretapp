@@ -3,6 +3,7 @@ package com.newmotion.tvi
 import cats.effect.{ConcurrentEffect, ContextShift, Timer}
 import com.newmotion.configuration.{ConfigSection, WebConf}
 import com.newmotion.doobie.{DatabaseConf, DoobieTransactor}
+import com.newmotion.logging.FLogger
 import com.newmotion.tvi.client.invoice.InvoiceRoutes
 import com.newmotion.tvi.client.{ClientRoutes, DoobieClientRepo}
 import com.newmotion.tvi.session.{CreateSessionConsumer, DoobieSessionRepo, Session, SessionRoutes}
@@ -27,7 +28,9 @@ object TVIApp {
     C: ContextShift[F]
   ): Stream[F, Nothing] = {
     for {
+      log             <- FLogger.fromName("init").stream
       dbConf          <- ConfigSource.default.at(ConfigSection.database).loadF[F, DatabaseConf].stream
+      _               <- log.info(s"mysql connection str: ${dbConf.url}").stream
       webConf         <- ConfigSource.default.at(ConfigSection.web).loadF[F, WebConf].stream
       xa              = DoobieTransactor.fromConf(dbConf)
       tariffs         = DoobieTariffRepo.impl[F](xa)

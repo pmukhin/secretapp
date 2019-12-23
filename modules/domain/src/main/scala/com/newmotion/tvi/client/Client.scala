@@ -38,7 +38,6 @@ object Client {
   )
 
   case object DriverTooYoung extends RuntimeException
-  case object AlreadyDeleted extends RuntimeException
 
   // noinspection TypeAnnotation
   def createK[F[_]: Sync](clients: ClientRepository[F]) =

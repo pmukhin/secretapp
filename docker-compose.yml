@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   mysql-db:
@@ -21,12 +21,14 @@ services:
     build:
       context: .
       dockerfile: "./docker/web/Dockerfile"
+    depends_on:
+      - mysql-db
     environment:
-      - "TVI_MYSQL_HOST=mysql-db"
-      - "TVI_MYSQL_PORT=3306"
-      - "TVI_MYSQL_NAME=TVIApp"
-      - "TVI_MYSQL_USER=root"
-      - "TVI_MYSQL_PSW=root"
+      - "TVI_MYSQL_HOST=${TVI_MYSQL_HOST}"
+      - "TVI_MYSQL_PORT=${TVI_MYSQL_PORT}"
+      - "TVI_MYSQL_NAME=${TVI_MYSQL_NAME}"
+      - "TVI_MYSQL_USER=${TVI_MYSQL_USER}"
+      - "TVI_MYSQL_PSW=${TVI_MYSQL_PSW}"
     ports:
       - "8080:8080"
     networks:

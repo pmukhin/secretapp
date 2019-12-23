@@ -5,7 +5,7 @@ import cats.effect.Sync
 import com.newmotion.logging.FLogger
 import com.newmotion.response.BadRequestBody
 import com.newmotion.tvi.Repository
-import com.newmotion.tvi.client.Client.AlreadyDeleted
+import com.newmotion.tvi.Repository.AlreadyDeleted
 import org.http4s.circe.{jsonEncoderOf, jsonOf}
 import org.http4s.dsl.Http4sDsl
 import org.http4s.{EntityDecoder, EntityEncoder, HttpRoutes, InvalidMessageBodyFailure}

@@ -1,10 +1,13 @@
-package com.newmotion.it
+package com.newmotion.it.client
 
 import cats.effect.specs2.CatsIO
-import org.specs2.mutable.Specification
+import com.newmotion.it.IntegrationSpec
+import org.specs2.specification.BeforeAll
 
-class ClientRoutesSpec extends Specification with IntegrationSpec with CatsIO {
-  "ClientRoutes" should {
+class ClientRoutesSpec extends IntegrationSpec with CatsIO with BeforeAll {
+  override def beforeAll: Unit = seed("01")
+
+  "ClientRoutes" should sequential ^ {
     "serve a client if it exists" in {
       get("/clients/25").map { r =>
         r.status must_=== 200
@@ -45,7 +48,7 @@ class ClientRoutesSpec extends Specification with IntegrationSpec with CatsIO {
       }
     }
     "delete if entity is not deleted" in {
-      delete("/clients/1").map { r =>
+      delete("/clients/3").map { r =>
         r.status must_=== 200
       }
     }
