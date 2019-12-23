@@ -2,10 +2,10 @@ package com.newmotion.it.session
 
 import cats.effect.specs2.CatsIO
 import com.newmotion.it.IntegrationSpec
-import org.specs2.specification.BeforeAll
+import org.specs2.mutable.Before
 
-class SessionRoutesSpec extends IntegrationSpec with CatsIO with BeforeAll {
-  override def beforeAll(): Unit = seed("01")
+class SessionRoutesSpec extends IntegrationSpec with CatsIO with Before {
+  override def before(): Unit = seed("01")
 
   "SessionRoutes" should sequential ^ {
     "serve session if exists" in {

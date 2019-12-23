@@ -76,6 +76,7 @@ lazy val it = (project in file("modules/it"))
   .dependsOn(domain)
   .settings(commonSettings)
   .settings(
+    parallelExecution in Test := false,
     libraryDependencies ++= Seq(
       "org.http4s"            %% "http4s-blaze-client" % Http4sVersion,
       "com.github.pureconfig" %% "pureconfig"          % PureconfigVersion,

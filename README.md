@@ -7,11 +7,18 @@
 - `POST /sessions` - create a session
 
 ## Modules explanation
+- `domain` - where abstract application logic is located along with models
+- `doobie-be` - doobie implementation of data sources
+- `csv2s` - a tiny library for producing csv
+- `web` - web application as
+- `it` - integration tests
 
 ## How to run
 - `sbt "project web" assembly`
 - `docker-compose up`
 - `open http://127.0.0.1:8080`
+
+## Important points
 
 ## How to run integration tests
 - stop your docker environment by `docker-compose down`

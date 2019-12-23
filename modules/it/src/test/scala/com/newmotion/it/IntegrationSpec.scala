@@ -5,8 +5,7 @@ import java.util.concurrent.Executors
 import cats.effect.{Blocker, IO}
 import com.newmotion.it.helpers.{Configuration, HttpRequests}
 import doobie.util.transactor.Transactor
-import org.specs2.mutable.Specification
-import org.specs2.specification.AfterAll
+import org.specs2.mutable.{After, Specification}
 
 import scala.concurrent.ExecutionContext
 import scala.util.Try
@@ -15,7 +14,7 @@ trait IntegrationSpec
     extends Specification
     with Configuration
     with HttpRequests
-    with AfterAll
+    with After
     with Queries { self =>
 
   override protected val className = self.getClass.getSimpleName
@@ -47,12 +46,15 @@ trait IntegrationSpec
         .unsafeRunSync
     }.toEither.leftMap(e => failure(e.getMessage))
 
-  override def afterAll(): Unit = clean()
+  override def after: Unit = clean()
 
-  protected def seed(name: String): Unit = {
+  protected def seed(name: String*): Unit = {
     clean()
-    val sql = loadResource(s"/testdata/$className/sql/$name.sql")
-    Try(Fragment.const(sql).update.run.transact(transactor).unsafeRunSync).toEither.leftMap(println)
+    name.foreach { n =>
+      val sql = loadResource(s"/testdata/$className/sql/$n.sql")
+      Try(Fragment.const(sql).update.run.transact(transactor).unsafeRunSync).toEither
+        .leftMap(println)
+    }
   }
 
   protected def asIn(name: String): String =

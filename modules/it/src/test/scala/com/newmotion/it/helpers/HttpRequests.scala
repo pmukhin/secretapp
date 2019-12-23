@@ -29,9 +29,10 @@ trait HttpRequests { self: Configuration with Specification =>
     def bodyAsIn(
       name: String,
       asJson: Boolean = false,
-      dropColumns: List[String] = List()
+      dropColumns: List[String] = List(),
+      `type`: String = "json"
     ): MatchResult[Any] = {
-      val data = loadResource(s"/testdata/$className/response_$name.json")
+      val data = loadResource(s"/testdata/$className/response_$name.${`type`}")
       if (!asJson) {
         data must_== body
       } else {

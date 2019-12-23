@@ -2,12 +2,14 @@ package com.newmotion.it.client
 
 import cats.effect.specs2.CatsIO
 import com.newmotion.it.IntegrationSpec
-import org.specs2.specification.BeforeAll
+import org.specs2.mutable.Before
 
-class ClientRoutesSpec extends IntegrationSpec with CatsIO with BeforeAll {
-  override def beforeAll: Unit = seed("01")
+class ClientRoutesSpec extends IntegrationSpec with CatsIO with Before {
+  sequential // we need it to run sequentially
 
-  "ClientRoutes" should sequential ^ {
+  override def before: Unit = seed("01")
+
+  "ClientRoutes" should {
     "serve a client if it exists" in {
       get("/clients/25").map { r =>
         r.status must_=== 200
