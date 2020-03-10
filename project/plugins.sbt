@@ -1,0 +1,5 @@
+//addSbtPlugin("io.github.davidgregory084" % "sbt-tpolecat" % "0.1.3")
+addSbtPlugin("io.spray"       % "sbt-revolver" % "0.9.1")
+addSbtPlugin("com.geirsson"   % "sbt-scalafmt" % "1.5.1")
+addSbtPlugin("au.com.onegeek" %% "sbt-dotenv"  % "2.1.146")
+addSbtPlugin("com.eed3si9n"   % "sbt-assembly" % "0.14.10")
